@@ -1,23 +1,6 @@
-import Markdown from 'markdown-to-jsx'
-import React, { useEffect, useState } from 'react'
-import md from './posts/arquivo.md'
+import React from 'react'
+import Posts from './pages/Posts'
 
-function App() {
-  const [textMD, setTextMD] = useState('')
+const App = () => (<Posts />)
 
-  useEffect(() => {
-    fetch(md)
-      .then(res => res.text())
-      .then(res => setTextMD(res))
-  }, [])
-
-  return (
-    <div>
-      <Markdown
-        children={textMD}
-      />
-    </div>
-  );
-}
-
-export default App;
+export default App
