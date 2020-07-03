@@ -1,3 +1,5 @@
+![12 de maio de 2020](../assets/covers/2020-05-12-hello-world.png)
+
 # Artigo  
 12 de maio de 2020
 

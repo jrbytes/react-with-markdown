@@ -2,7 +2,7 @@ import Markdown from 'markdown-to-jsx'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-const Post = () => {
+const RenderArticle = () => {
   const [textMD, setTextMD] = useState('')
 
   let { id } = useParams()
@@ -18,11 +18,7 @@ const Post = () => {
     loadMarkdown()
   }, [id])
 
-  return (
-    <>
-      <Markdown children={textMD} />
-    </>
-  )
+  return (<Markdown children={textMD} />)
 }
 
-export default Post
+export default RenderArticle
