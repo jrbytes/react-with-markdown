@@ -1,5 +1,5 @@
-# Artigo  
-12 de maio de 2020
+# Article
+20 de julho de 2020
 
 ```js
   const name = 'JrBytes'

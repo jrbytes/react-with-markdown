@@ -1,6 +1,14 @@
 import React from 'react'
-import Posts from './pages/Posts'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-const App = () => (<Posts />)
+import Routes from './routes'
+
+const App = () => {
+  return (
+    <Router>
+      <Routes />
+    </Router>
+  )
+}
 
 export default App
